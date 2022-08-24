@@ -1,0 +1,11 @@
+Hello world.
+
+Requirements:
+- load images (i.e. in subdirectories too) (DONE)
+- display an image (DONE)
+- randomly select an image (DONE)
+- add tags to image (NOPE)
+- rename large number of images (NOPE)
+
+- Display filename & directory?
+- Zoom in & out

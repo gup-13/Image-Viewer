@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>238</width>
+    <height>137</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_ImageViewer">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>ImageViewer</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>238</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open...</string>
+     </property>
+     <addaction name="action_OpenConfigFile"/>
+     <addaction name="action_OpenImage"/>
+    </widget>
+    <addaction name="menuOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuOthers">
+    <property name="title">
+     <string>Others</string>
+    </property>
+    <addaction name="action_DisplayLoadedFiles"/>
+    <addaction name="action_ScrambleOrder"/>
+    <addaction name="action_ShowOnTimer"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOthers"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_DisplayLoadedFiles">
+   <property name="text">
+    <string>Display Loaded Files</string>
+   </property>
+  </action>
+  <action name="action_ScrambleOrder">
+   <property name="text">
+    <string>Scramble Order</string>
+   </property>
+  </action>
+  <action name="action_ShowOnTimer">
+   <property name="text">
+    <string>Show on Timer</string>
+   </property>
+  </action>
+  <action name="action_OpenImage">
+   <property name="text">
+    <string>Image</string>
+   </property>
+  </action>
+  <action name="action_OpenConfigFile">
+   <property name="text">
+    <string>Configuration File</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
